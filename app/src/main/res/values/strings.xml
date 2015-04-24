@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Lab2_punto2</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="suma">Suma</string>
+    <string name="resta">Resta</string>
+    <string name="multiplicacion">Multiplicación</string>
+    <string name="division">División</string>
+    <string name="result">Resultado: </string>
+    <string name="cero">0.00 </string>
+    <string name="ingrese">Ingrese un número </string>
+    <string name="calcular">Calcular </string>
+</resources>
