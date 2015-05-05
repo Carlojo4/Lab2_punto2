@@ -11,10 +11,12 @@ import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity {
     private int opc=0;
+    private TextView result;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        result = (TextView)findViewById(R.id.tresult);
     }
     public void method (View view){
         if(view.getId()==R.id.rsuma)
@@ -30,7 +32,6 @@ public class MainActivity extends ActionBarActivity {
     public void method_1 (View view){
         final EditText num1 = (EditText)findViewById(R.id.eNum1);
         final EditText num2 = (EditText)findViewById(R.id.eNum2);
-        final TextView result = (TextView)findViewById(R.id.tresult);
         float _num1,_num2, total;
         _num1 = Float.valueOf(num1.getText().toString());
         _num2 = Float.valueOf(num2.getText().toString());
@@ -80,5 +81,19 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+    @Override
+    protected void onSaveInstanceState(Bundle outState){
+        super.onSaveInstanceState(outState);
+        String text1= result.getText().toString();
+        outState.putString("string1",text1 );
+    }
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        // TODO Auto-generated method stub
+        super.onRestoreInstanceState(savedInstanceState);
+        String text1 = savedInstanceState.getString("string1");
+        result.setText(text1);
+
     }
 }

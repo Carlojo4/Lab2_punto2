@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Lab2_punto2</string>
+
+    <string name="action_settings">Impostazioni</string>
+    <string name="suma">Somma</string>
+    <string name="resta">Sottrazione</string>
+    <string name="multiplicacion">Moltiplicazione</string>
+    <string name="division">Divisione</string>
+    <string name="result">Risultato: </string>
+    <string name="cero">0.00 </string>
+    <string name="ingrese">Inserire un numero</string>
+    <string name="calcular">Calcolare </string>
+</resources>
